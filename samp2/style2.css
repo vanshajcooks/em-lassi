@@ -1,0 +1,126 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    background-color: #0a0a0a;
+    overflow: hidden;
+}
+
+/* Header styling (Top-Left) */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: rgba(10, 10, 10, 0.95);
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 8px #00ff00;
+}
+
+.header p {
+    font-size: 1.5rem;
+    color: #00ff00;
+}
+
+/* Message box styling (Positioned to the right) */
+.message-box {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 400px;
+    padding: 15px;
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.message-box strong {
+    font-size: 1.1rem;
+}
+
+/* Login section styling (Positioned to the left) */
+.login-section {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.password-input {
+    padding: 12px;
+    width: 200px;
+    border: 1px solid #00ff00;
+    outline: none;
+    color: #00ff00;
+    background-color: #222;
+    box-shadow: 0 0 8px #00ff00;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.login-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    color: #0a0a0a;
+    background-color: #00ff00;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00ff00;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.login-form .forgot-password {
+    color: #00ff00;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+/* Footer styling with IP address */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #00ff00;
+}
+
+/* Coordinates styling (Top-Right) */
+.coordinates {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #00ff00;
+}
+
+/* 3D Background canvas */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
